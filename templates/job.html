@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="job">
+    <div class="job-top-info">
+      <div class="image-wrapper">
+        <img src="{{ job.image }}" alt="" />
+      </div>
+      <div class="company-info">
+        <span class="company-name">{{ job.company }}</span>
+        <span class="created-at">
+          {{ job.location }} <span>&bull;</span>
+          {{ job.created_at | date }}
+        </span>
+      </div>
+    </div>
+    <h1>{{ job.title }} [{{ job.occupation }}]</h1>
+    <markdown source="{{ job.description }}">
+    </markdown>
+    <button class="apply-btn">Apply now!</button>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Green Job</title>
+  <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body ng-app="green-job">
+  <div class="green-line">
+  </div>
+
+  <div class="container">
+    <div class="clearfix header">
+      <div class="header-item left">
+        <a class="logo" href="#/jobs">
+          <span class="logo-1">GREEN</span>
+          <span class="logo-2">JOB</span>
+        </a>
+      </div>
+      <nav class="header-item right">
+        <ul>
+          <li><a menu-item href="#/jobs">All jobs</a></li>
+          <li><a menu-item href="#/jobs/full">Full-time</a></li>
+          <li><a menu-item href="#/jobs/part">Part-time</a></li>
+          <li><a menu-item href="#/jobs/freelance">Freelance</a></li>
+          <li><a menu-item href="#/about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div ng-view>
+  </div>
+
+  <hr>
+
+  <footer>
+    <div class="links">
+      <a href="#/jobs">Home</a>
+      <a href="#/jobs">Jobs</a>
+      <a href="#/about">About</a>
+    </div>
+    <div class="year">
+      2016 FTW
+    </div>
+  </footer>
+
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.min.js"></script>
+  <script src="bower_components/showdown/dist/showdown.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/directives.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/services.js"></script>
+</body>
+</html>

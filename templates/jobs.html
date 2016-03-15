@@ -1,0 +1,27 @@
+<div class="container">
+  <ul class="timeline">
+    <li class="line-item clearfix" ng-repeat="job in jobs">
+      <div class="logo">
+        <a href="#/jobs/{{ job.id }}">
+          <img src="{{ job.image }}" alt="{{ job.company }}">
+        </a>
+      </div>
+      <div class="info">
+        <a class="job-title" href="#/jobs/{{ job.id }}">{{ job.title }}</a>
+        <span class="job-details">
+          {{ job.location }} <span class="wrap">&bull;</span>
+          {{ job.company }} <span class="wrap">&bull;</span>
+          {{ job.created_at | date }}
+        </span>
+      </div>
+      <div class="occupacy">
+        <occupation type="{{ job.occupation }}">
+        </occupation>
+      </div>
+    </li>
+  </ul>
+
+  <div class="more">
+    <a href="#">Load more</a>
+  </div>
+</div>
