@@ -29,11 +29,15 @@ html {
   float: right; }
 
 .header {
-  margin-top: 5em; }
+  padding: 0 2em;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
   .header .header-item {
     height: 75px;
     line-height: 75px; }
     @media screen and (max-width: 600px) {
+      .header {
+        padding-top: 0.5em; }
       .header .header-item {
         display: block;
         width: 100%;
@@ -164,6 +168,7 @@ html {
       opacity: 0.8; }
 
 .job {
+  margin-top: 1em;
   margin-bottom: 4em; }
   .job .job-top-info {
     display: table; }
